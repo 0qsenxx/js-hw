@@ -1,6 +1,8 @@
 // #1
-const inputRef = document.querySelector("#text-input");
-const buttonRef = document.querySelector("#text-button");
+// const inputRef = document.querySelector("#text-input");
+// const buttonRef = document.querySelector("#text-button");
+const inputRef = document.getElementById("text-input");
+const buttonRef = document.getElementById("text-button");
 
 inputRef.addEventListener("input", () => {
   if (inputRef) {
