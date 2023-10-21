@@ -64,8 +64,8 @@
 
     <!-- ?hw-js-27 -->
     <!-- !1 -->
-    <button class="button" data-action="open-modal">Відкрити модалку</button>
-    <div class="backdrop js-backdrop">
+    <!-- <button class="button" data-action="open-modal">Відкрити модалку</button>
+    <div data-action="close-modal" class="backdrop js-backdrop">
       <div class="modal">
         <h2>Modal window</h2>
         <p>
@@ -82,10 +82,10 @@
           Закрити
         </button>
       </div>
-    </div>
+    </div> -->
 
     <!-- !2 -->
-    <form>
+    <!-- <form>
       <p>Choose a color:</p>
       <label>
         <input type="radio" name="color" value="red" checked />
@@ -99,27 +99,89 @@
         <input type="radio" name="color" value="green" />
         Green
       </label>
-    </form>
+    </form> -->
 
     <!-- !3 -->
-    <input type="text" placeholder="Ваше ім'я?" id="name-input" />
-    <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
+    <!-- <input type="text" placeholder="Ваше ім'я?" id="name-input" />
+    <h1>Привіт, <span id="name-output">незнайомець</span>!</h1> -->
 
     <!-- !4 -->
-    <input
+    <!-- <input
       type="text"
       id="validation-input"
       data-length="6"
       placeholder="Введи 6 символів"
-    />
+    /> -->
 
     <!-- !5 -->
-    <input id="font-size-control" type="range" />
+    <!-- <input id="font-size-control" type="range" />
     <br />
-    <span id="text">Абракадабра!</span>
+    <span id="text">Абракадабра!</span> -->
+
+    <!-- ?hw-js-28 -->
+
+    <!-- !1 -->
+
+    <img
+      class="image"
+      data-preview="image"
+      src="https://images.pexels.com/photos/4617294/pexels-photo-4617294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="зображення"
+    />
+
+    <div class="backdrop" data-backdrop>
+      <ul class="gallery" data-gallery>
+        <li class="gallery__item full-image-container">
+          <img
+            class="image full-image"
+            src="https://images.pexels.com/photos/4617294/pexels-photo-4617294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="зображення"
+          />
+        </li>
+        <li class="gallery__item">
+          <img
+            class="image"
+            src="https://images.pexels.com/photos/11815778/pexels-photo-11815778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="зображення"
+          />
+        </li>
+        <li class="gallery__item">
+          <img
+            class="image"
+            src="https://images.pexels.com/photos/6195166/pexels-photo-6195166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="зображення"
+          />
+        </li>
+        <li class="gallery__item">
+          <img
+            class="image"
+            src="https://images.pexels.com/photos/6957926/pexels-photo-6957926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="зображення"
+          />
+        </li>
+        <li class="gallery__item">
+          <img
+            class="image"
+            src="https://images.pexels.com/photos/15520825/pexels-photo-15520825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="зображення"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <!-- !2 -->
+    <div id="controls">
+      <input type="number" min="0" max="100" step="1" data-input="quantity"/>
+      <button type="button" data-action="render">Створити</button>
+      <button type="button" data-action="destroy">Очистити</button>
+    </div>
+
+    <div id="boxes"></div>
+
+    <!-- ?Scripts -->
     <script src="
     https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
     "></script>
-    <script src="./js/hw-js-27.js" type="module"></script>
+    <script src="./js/hw-js-28.js" type="module"></script>
   </body>
 </html>

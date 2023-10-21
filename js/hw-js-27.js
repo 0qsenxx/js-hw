@@ -3,14 +3,19 @@ const openModalBtnRef = document.querySelector('[data-action="open-modal"]');
 const backdropRef = document.querySelector(".backdrop");
 const closeModalBtnRef = document.querySelector('[data-action="close-modal"]');
 
-openModalBtnRef.addEventListener("click", toggleModal);
-closeModalBtnRef.addEventListener("click", toggleModal);
-function toggleModal() {
+openModalBtnRef.addEventListener("click", () => {
   document.body.classList.toggle("show-modal");
-}
+});
+closeModalBtnRef.addEventListener("click", (e) => {
+  document.body.classList.toggle("show-modal");
+});
 
 // !2
-backdropRef.addEventListener("click", toggleModal);
+backdropRef.addEventListener("click", (e) => {
+  if (!e.target.dataset.action) {
+    document.body.classList.toggle("show-modal");
+  }
+});
 
 // !3
 const inputRadioRedRef = document.querySelector("input[value=red]");
@@ -89,5 +94,5 @@ const inputRangeTextRef = document.getElementById("text");
 
 // ? Другий спосіб
 inputRangeRef.addEventListener("input", (e) => {
-  inputRangeTextRef.style.fontSize = e.currentTarget.value + 'px';
+  inputRangeTextRef.style.fontSize = e.currentTarget.value + "px";
 });
