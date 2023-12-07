@@ -122,7 +122,7 @@
 
     <!-- !1 -->
 
-    <img
+    <!-- <img
       class="image"
       data-preview="image"
       src="https://images.pexels.com/photos/4617294/pexels-photo-4617294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -167,21 +167,56 @@
           />
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <!-- !2 -->
-    <div id="controls">
+    <!-- <div id="controls">
       <input type="number" min="0" max="100" step="1" data-input="quantity"/>
       <button type="button" data-action="render">Створити</button>
       <button type="button" data-action="destroy">Очистити</button>
     </div>
 
-    <div id="boxes"></div>
+    <div id="boxes"></div> -->
+
+    <!-- !hw-js-29 -->
+    <!-- В этот список добавляй элементы галереи -->
+    <ul class="gallery js-gallery"></ul>
+
+    <!--
+      Модальное окно для полноразмерного изображения
+      Для того чтобы открыть, необходимо добавить на div.lightbox CSS-класс is-open
+    -->
+    <div class="lightbox js-lightbox">
+      <div class="lightbox__overlay"></div>
+
+      <div class="lightbox__content">
+        <img class="lightbox__image" src="" alt="" />
+      </div>
+
+      <button
+        type="button"
+        class="lightbox__button"
+        data-action="close-lightbox"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="17"
+          height="17"
+          viewBox="0 0 17 17"
+          fill="none"
+        >
+          <path
+            d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16"
+            stroke="white"
+          />
+        </svg>
+      </button>
+    </div>
 
     <!-- ?Scripts -->
     <script src="
     https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
     "></script>
-    <script src="./js/hw-js-28.js" type="module"></script>
+    <script src="./js/hw-js-29.js" type="module"></script>
   </body>
 </html>
