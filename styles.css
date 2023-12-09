@@ -139,24 +139,17 @@ align-items: center;
 flex-wrap: wrap;
 } */
 
-
 /* ?hw-js-29 */
-:root {
+/* :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 250ms;
 }
 
 html {
   box-sizing: border-box;
-}
+} */
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
+/* body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,9 +159,9 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   background-color: #fff;
   color: #212121;
-}
+} */
 
-.gallery {
+/* .gallery {
   display: grid;
   width: 1200px;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
@@ -178,13 +171,9 @@ body {
   list-style: none;
   margin-left: auto;
   margin-right: auto;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; */
-}
+} */
 
-.gallery__item {
+/* .gallery__item {
   position: relative;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -197,12 +186,11 @@ body {
 .gallery__image {
   height: 100%;
   width: 100%;
-  /* width: 340px; */
   object-fit: cover;
   transition: transform var(--animation-duration) var(--timing-function);
-}
+} */
 
-.gallery__link {
+/* .gallery__link {
   display: block;
   text-decoration: none;
   height: 100%;
@@ -213,7 +201,7 @@ body {
 }
 
 /* Lightbox */
-.lightbox {
+/* .lightbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,4 +273,38 @@ body {
 .lightbox__button:hover,
 .lightbox__button:focus {
   background-color: rgba(0, 0, 0, 0.5);
+} */
+
+/* ?hw-js-30 */
+.slider {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.slider__input {
+  width: 100%;
+}
+
+.slider__image {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  /* background-color: #cccccc;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.slider__text {
+  display: block;
+  color: #9d9d9d;
+  text-align: center;
+}
+
+#box{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
 }
