@@ -1,6 +1,4 @@
 // ?1
-// const imgs = document.querySelectorAll('img');
-
 const options = {
   root: null,
   rootMargin: "0px",
