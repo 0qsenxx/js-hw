@@ -1,0 +1,23 @@
+{
+  "name": "js-hw",
+  "version": "1.0.0",
+  "description": "hometasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node hw-js-32.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0qsenxx/js-hw.git"
+  },
+  "author": "0qsenxx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0qsenxx/js-hw/issues"
+  },
+  "homepage": "https://github.com/0qsenxx/js-hw#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
