@@ -256,12 +256,95 @@
       </li>
     </ul> -->
 
-
     <!-- !hw-js-32 -->
     <!-- ?1 -->
-    <h1>Hello World</h1>
+    <!-- <h1>Hello World</h1>
     <h2>Bye World</h2>
-    <button type="button" id="hw32btn"></button>
+    <button type="button" id="hw32btn"></button> -->
+
+    <!-- !hw-js-33 -->
+    <form id="form">
+      <input type="text" placeholder="Імʼя" />
+      <input type="text" placeholder="Прізвище" />
+      <input type="number" placeholder="Вік" />
+      <label>Оберіть курс</label>
+      <!-- <select id="selectedCourse">
+        <option value="0" selected disabled>Оберіть курс</option>
+        <option value="1">Front-End</option>
+        <option value="2">Python</option>
+        <option value="3">UX-UI</option>
+        <option value="4">Digital Design</option>
+        <option value="5">Design</option>
+        <option value="6">Graphic Design</option>
+      </select>
+      <label>Оберіть курси які відвідує</label>
+      <select id="selectVisitedCourses">
+        <option value="0" selected disabled>Оберіть курси які відвідує</option>
+        <option value="1">Front-End</option>
+        <option value="2">Python</option>
+        <option value="3">UX-UI</option>
+        <option value="4">Digital Design</option>
+        <option value="5">Design</option>
+        <option value="6">Graphic Design</option>
+      </select> -->
+      <input type="text" id="selectedCourse">
+      <input type="text" id="selectVisitedCourses">
+      <button type="submit">Відправити</button>
+    </form>
+    <button class="change__data">Змінити дані користувача</button>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Імʼя</th>
+          <th>Прізвище</th>
+          <th>Вік</th>
+          <th>Курс</th>
+          <th>Курси які відвідує</th>
+        </tr>
+      </thead>
+    </table>
+
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <button class="close-modal__button">close modal</button>
+        <input
+          type="number"
+          placeholder="Введіть номер користувача"
+          class="user-number"
+          name="user-number"
+        />
+        <form id="modal__form">
+          <input type="text" placeholder="Імʼя" name="name" />
+          <input type="text" placeholder="Прізвище" name="surname" />
+          <input type="number" placeholder="Вік" name="age" />
+          <label>Оберіть курс</label>
+          <!-- <select id="selectedCourse" name="selectedCourse">
+            <option value="0" selected disabled>Оберіть курс</option>
+            <option value="1" name="frontend">Front-End</option>
+            <option value="2" name="python">Python</option>
+            <option value="3" name="ux-ui">UX-UI</option>
+            <option value="4" name="digital-design">Digital Design</option>
+            <option value="5" name="design">Design</option>
+            <option value="6" name="graphic-design">Graphic Design</option>
+          </select>
+          <label>Оберіть курси які відвідує</label>
+          <select id="selectVisitedCourses" name="selectVisitedCourses">
+            <option value="0" selected disabled>Оберіть курс</option>
+            <option value="1" name="frontend">Front-End</option>
+            <option value="2" name="python">Python</option>
+            <option value="3" name="ux-ui">UX-UI</option>
+            <option value="4" name="digital-design">Digital Design</option>
+            <option value="5" name="design">Design</option>
+            <option value="6" name="graphic-design">Graphic Design</option>
+          </select> -->
+          <input type="text" id="selectedCourse">
+          <input type="text" id="selectVisitedCourses">
+          <button type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- !hw-js-34 -->
 
     <!-- ?Scripts -->
     <script src="
@@ -273,6 +356,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script> -->
-    <script src="./js/hw-js-32.js" type="module"></script>
+    <script src="./js/hw-js-33.js" type="module"></script>
   </body>
 </html>
